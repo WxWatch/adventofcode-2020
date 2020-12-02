@@ -17,6 +17,7 @@ func getInput() []string {
 	return strings.Fields(string(data))
 }
 
+/* Naive solution; gets worse the bigger the initial entries array is */
 func part1Iteration(entries []string) int {
 	for i := 0; i < len(entries); i++ {
 		for j := 0; j < len(entries); j++ {
@@ -35,6 +36,7 @@ func part1Iteration(entries []string) int {
 	return -1
 }
 
+/* Naive solution; gets worse the bigger the initial entries array is */
 func part2Iteration(entries []string) int {
 	for i := 0; i < len(entries); i++ {
 		for j := 0; j < len(entries); j++ {
