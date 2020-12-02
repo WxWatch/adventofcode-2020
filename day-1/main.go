@@ -57,8 +57,12 @@ func part1SortBinaryIteration(entries []int) int {
 	defer timeTrack(time.Now(), "part1Sort")
 	sort.Ints(entries)
 
-	for _, entry := range entries {
+	for index, entry := range entries {
+		// Binary search to find second number
 		i := sort.Search(len(entries), func(i int) bool {
+			if index == i {
+				return false
+			}
 			return entry+entries[i] >= 2020
 		})
 		if i < len(entries) && entry+entries[i] == 2020 {
