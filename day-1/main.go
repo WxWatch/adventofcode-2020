@@ -52,7 +52,6 @@ func part1Iteration(entries []int) int {
 	return -1
 }
 
-/* Slower than part1Iteration */
 func part1SortBinaryIteration(entries []int) int {
 	defer timeTrack(time.Now(), "part1Sort")
 	sort.Ints(entries)
