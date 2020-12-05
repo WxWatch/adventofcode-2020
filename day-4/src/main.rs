@@ -212,7 +212,6 @@ fn part_two(passports: &Vec<Passport>) -> i32 {
 }
 
 fn main() {
-    println!("Hello, world!");
     let passports = parse_input();
     let p1_valid_passports = part_one(&passports);
     println!("Part 1: There are {} valid passports", p1_valid_passports);
