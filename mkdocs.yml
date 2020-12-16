@@ -1,0 +1,7 @@
+site_name: 'advent-of-code-2020'
+
+nav:
+  - Home: index.md
+  
+plugins:
+  - techdocs-core
