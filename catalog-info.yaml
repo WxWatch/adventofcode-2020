@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: advent-of-code-2020
+  description: An example of a Backstage application.
+  annotations:
+    backstage.io/techdocs-ref: dir:./
+spec:
+  type: service
+  owner: WxWatch
+  lifecycle: experimental
